@@ -32,6 +32,7 @@ class CashRegister
   end
 
   def items(item)
+    binding.pry
     if @quantity > 1
       counter = 0
       while counter < @quantity
@@ -39,7 +40,6 @@ class CashRegister
         counter += 1
       end
     else
-      binding.pry
       @items << item
     end
   end
