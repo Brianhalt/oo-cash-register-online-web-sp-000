@@ -36,8 +36,8 @@ class CashRegister
       counter = 0
       while counter < @quantity
         @items << @item
-        binding.pry
         counter += 1
+        binding.pry
       end
     else
       @items << @item
