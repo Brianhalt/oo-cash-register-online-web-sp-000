@@ -16,9 +16,9 @@ class CashRegister
     @quantity = quantity
   end
 
-  def total
-    @total
-  end
+  # def total
+  #   @total
+  # end
 
   def apply_discount
     @amount_off = @total * @discount/100
@@ -29,7 +29,6 @@ class CashRegister
     else
       return "There is no discount to apply."
     end
-
   end
 
   def items(item)
@@ -44,7 +43,6 @@ class CashRegister
       @items << item
     end
   end
-
 
   def void_last_transaction
     @total -= @price
